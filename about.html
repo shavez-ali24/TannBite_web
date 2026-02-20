@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About – Tap N Bite</title>
+    <meta
+      name="description"
+      content="Learn the story behind Tap N Bite, a QR code restaurant ordering system built for busy restaurant teams."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#fff7ed",
+                100: "#ffedd5",
+                200: "#fed7aa",
+                300: "#fdba74",
+                400: "#fb923c",
+                500: "#f97316",
+                600: "#ea580c",
+                700: "#c2410c",
+                800: "#9a3412",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="/" class="flex items-center">
+            <img src="./images/logo.png" alt="Tap N Bite" class="h-12 sm:h-14">
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="/features" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">Features</a>
+            <a href="/pricing" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">Pricing</a>
+            <a href="/about" class="text-sm font-medium text-brand-600">About</a>
+            <a
+              href="/#contact"
+              class="inline-flex items-center px-5 py-2.5 rounded-full bg-brand-500 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition-all hover:shadow-xl hover:shadow-brand-500/40"
+            >
+              Get Started
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="bg-gradient-to-br from-orange-50 via-white to-red-50 pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+              We're Building the Restaurant OS for QR-First Dining
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+              Tap N Bite started with a simple idea: ordering should be fast for guests, and fully controlled by restaurant owners—without needing a big IT team.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why We Built -->
+      <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Why We Built Tap N Bite
+              </h2>
+              <div class="space-y-4 text-lg text-slate-600 leading-relaxed">
+                <p>
+                  Many restaurants today run on a mix of paper menus, messaging apps, and multiple disconnected tools. This makes it easy to lose orders, miscommunicate, or forget what was sold last night.
+                </p>
+                <p>
+                  We designed Tap N Bite as a single, simple system where guests can place orders with a scan, and teams can manage everything from one clean dashboard.
+                </p>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="./images/team.png" alt="Team" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards -->
+      <section class="py-24 bg-gradient-to-br from-orange-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Built for Real Service Hours</h3>
+              <p class="text-slate-600">
+                We designed the workflow to fit into busy lunch rushes and late-night service, with quick status changes and clear screens.
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Simple, Not Overwhelming</h3>
+              <p class="text-slate-600">
+                Tap N Bite focuses on the essentials: ordering, menu management, sales visibility, and basic staff roles, without unnecessary complexity.
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Future-Ready</h3>
+              <p class="text-slate-600">
+                With inventory and deeper analytics on the way, restaurants that start now will be ready for the next phase with no migration pain.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Principles -->
+      <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Our Product Principles
+              </h2>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-slate-900">Fast to start</strong>
+                    <span class="text-slate-600"> – you don't need a designer or developer.</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-slate-900">Easy to train</strong>
+                    <span class="text-slate-600"> – staff can learn the interface in minutes.</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-slate-900">Owner control first</strong>
+                    <span class="text-slate-600"> – you decide what's visible and who can change what.</span>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <div class="w-8 h-8 rounded-lg bg-brand-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-slate-900">Real-world friendly</strong>
+                    <span class="text-slate-600"> – works on the devices you already own, in the browser.</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="./images/produvt-principle.png" alt="Product Principles" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-gradient-to-br from-brand-500 to-red-500 rounded-3xl p-12 text-center text-white shadow-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+              We're Currently Onboarding Early Restaurants for Free
+            </h2>
+            <p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+              If you run a restaurant, café, or cloud kitchen and want to modernize your ordering without heavy hardware or complex software, we'd love to talk.
+            </p>
+            <a
+              href="/#contact"
+              class="inline-flex items-center px-8 py-4 rounded-full bg-white text-brand-600 text-base font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
+            >
+              Talk to Us
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img src="./images/logo.png" alt="Tap N Bite" class="h-12 mb-4 brightness-0 invert">
+            <p class="text-slate-400 text-sm">
+              Transform your restaurant with smart QR ordering. Free forever.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/features" class="text-slate-400 hover:text-white transition-colors">Features</a></li>
+              <li><a href="/pricing" class="text-slate-400 hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="/about" class="text-slate-400 hover:text-white transition-colors">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2 text-slate-400 text-sm">
+              <li>shvzrn@gmail.com</li>
+              <li>+919149098757</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+          <p>© 2026 Tap N Bite. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const animateElements = document.querySelectorAll('section > div, .grid > div');
+        animateElements.forEach((el, index) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(20px)';
+          el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
+</html>
