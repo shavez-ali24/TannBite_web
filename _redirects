@@ -1,0 +1,12 @@
+# Netlify redirects file for clean URLs (removes .html extension)
+
+# Redirect .html to clean URLs
+/index.html    /    301
+/features.html /features 301
+/pricing.html  /pricing  301
+/about.html    /about    301
+
+# Rewrite clean URLs to .html files (only for these specific paths)
+/features      /features.html  200
+/pricing       /pricing.html   200
+/about         /about.html     200
