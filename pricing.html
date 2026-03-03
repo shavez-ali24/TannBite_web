@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing – Tap N Bite QR Restaurant Ordering</title>
+    <meta
+      name="description"
+      content="Tap N Bite is currently free for all restaurants. See what's included and how pricing may evolve in the future."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#fff7ed",
+                100: "#ffedd5",
+                200: "#fed7aa",
+                300: "#fdba74",
+                400: "#fb923c",
+                500: "#f97316",
+                600: "#ea580c",
+                700: "#c2410c",
+                800: "#9a3412",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="/" class="flex items-center">
+            <img src="/images/logo.png" alt="Tap N Bite" class="h-12 sm:h-14">
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="/features" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">Features</a>
+            <a href="/pricing" class="text-sm font-medium text-brand-600">Pricing</a>
+            <a href="/about" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">About</a>
+            <a
+              href="/#contact"
+              class="inline-flex items-center px-5 py-2.5 rounded-full bg-brand-500 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition-all hover:shadow-xl hover:shadow-brand-500/40"
+            >
+              Get Started
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="bg-gradient-to-br from-orange-50 via-white to-red-50 pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+              Currently Free Forever
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+              Simple Pricing That Starts at Free
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+              We're focused on building the best QR ordering experience. For now, Tap N Bite is free for everyone while we grow and learn with our early restaurant partners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Cards -->
+      <section class="py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Free Plan -->
+            <div class="relative">
+              <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+                <span class="px-4 py-1 rounded-full bg-brand-500 text-white text-xs font-bold uppercase tracking-wider">
+                  Popular
+                </span>
+              </div>
+              <div class="bg-white rounded-3xl border-2 border-brand-500 p-8 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-brand-100 rounded-full -mr-16 -mt-16 opacity-50"></div>
+                <div class="relative">
+                  <div class="text-sm font-bold uppercase tracking-wider text-brand-600 mb-2">
+                    Current Plan
+                  </div>
+                  <h2 class="text-3xl font-bold text-slate-900 mb-2">Launch Plan</h2>
+                  <div class="mb-6">
+                    <span class="text-5xl font-bold text-slate-900">Free</span>
+                  </div>
+                  <p class="text-slate-600 mb-8">
+                    For restaurants of any size during our launch phase.
+                  </p>
+                  <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Unlimited tables & QR codes</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Unlimited menu items and categories</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Eat here, takeaway, and delivery order types</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Admin panel for menu & order management</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Sales analytics dashboard</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Staff accounts with limited permissions</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                      <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-slate-700">Restaurant branding (logo, colors, details)</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="/#contact"
+                    class="block w-full text-center px-6 py-4 rounded-full bg-brand-500 text-base font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition-all hover:shadow-xl hover:shadow-brand-500/40"
+                  >
+                    Get Started Free
+                  </a>
+                  <p class="mt-4 text-center text-sm text-slate-500">
+                    No credit card required. No setup fees. You can leave at any time.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Future Plans -->
+            <div class="bg-white rounded-3xl border-2 border-slate-200 p-8 shadow-lg">
+              <div class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-2">
+                Future Plans
+              </div>
+              <h2 class="text-3xl font-bold text-slate-900 mb-2">Growing & Pro Plans</h2>
+              <div class="mb-6">
+                <span class="text-5xl font-bold text-slate-900">Coming Soon</span>
+              </div>
+              <p class="text-slate-600 mb-8">
+                We may introduce paid plans later, focused on advanced analytics and inventory.
+              </p>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-600">All Launch features</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-600">Advanced sales insights & exports</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-600">Inventory and stock alerts</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-slate-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-600">Priority support & onboarding</span>
+                </li>
+              </ul>
+              <p class="text-sm text-slate-500">
+                We will always communicate pricing changes clearly and early. Our goal is to keep a generous free option for smaller restaurants.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What You Get -->
+      <section class="py-24 bg-gradient-to-br from-orange-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              What You Get on the Free Launch Plan
+            </h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+              Everything you need to run QR ordering from day one, with no hidden fees or surprise bills.
+            </p>
+          </div>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">No Setup Costs</h3>
+              <p class="text-slate-600">
+                Start using Tap N Bite without paying anything up front. All you need is your browser and a printer for your QR codes.
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">No Long Contracts</h3>
+              <p class="text-slate-600">
+                Test the system in your restaurant with zero risk. If it doesn't fit your workflow, you can stop any time.
+              </p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
+              <div class="w-12 h-12 rounded-xl bg-brand-100 flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-slate-900 mb-3">Unlimited Usage</h3>
+              <p class="text-slate-600">
+                We don't charge per order or per table during the launch phase. Use it every day, all day, at no cost.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+              Pricing Questions
+            </h2>
+          </div>
+          <div class="space-y-4">
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Will I have to pay later?</h3>
+              <p class="text-slate-600">
+                In the future we may add paid plans with extra features. If that happens, you'll be notified clearly and given time to decide what works best for you. We want Tap N Bite to stay accessible, especially for smaller businesses.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Are there any hidden fees?</h3>
+              <p class="text-slate-600">
+                No. During this free phase we do not charge for orders, tables, or staff accounts. Your own payment provider may charge transaction fees if you connect online payments in the future.
+              </p>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-200">
+              <h3 class="text-lg font-bold text-slate-900 mb-2">Can I export my data?</h3>
+              <p class="text-slate-600">
+                Yes. You will be able to export key data like sales reports so you're never locked in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-gradient-to-br from-brand-500 to-red-500 rounded-3xl p-12 text-center text-white shadow-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+              Join Tap N Bite While It's Free
+            </h2>
+            <p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+              Become one of our early partner restaurants and help shape the future of digital ordering.
+            </p>
+            <a
+              href="/#contact"
+              class="inline-flex items-center px-8 py-4 rounded-full bg-white text-brand-600 text-base font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
+            >
+              Request Your Free Setup
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img src="/images/logo.png" alt="Tap N Bite" class="h-12 mb-4 brightness-0 invert">
+            <p class="text-slate-400 text-sm">
+              Transform your restaurant with smart QR ordering. Free forever.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/features" class="text-slate-400 hover:text-white transition-colors">Features</a></li>
+              <li><a href="/pricing" class="text-slate-400 hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="/about" class="text-slate-400 hover:text-white transition-colors">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2 text-slate-400 text-sm">
+              <li>shvzrn@gmail.com</li>
+              <li>+919149098757</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+          <p>© 2026 Tap N Bite. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const animateElements = document.querySelectorAll('section > div, article, .grid > div');
+        animateElements.forEach((el, index) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(20px)';
+          el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
+</html>

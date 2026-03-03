@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features – Tap N Bite QR Restaurant Ordering</title>
+    <meta
+      name="description"
+      content="Explore Tap N Bite features: QR code table ordering, live order management, menu control, sales analytics, staff permissions, and more."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#fff7ed",
+                100: "#ffedd5",
+                200: "#fed7aa",
+                300: "#fdba74",
+                400: "#fb923c",
+                500: "#f97316",
+                600: "#ea580c",
+                700: "#c2410c",
+                800: "#9a3412",
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.6s ease-in-out',
+              'slide-up': 'slideUp 0.6s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-slate-900 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-md shadow-sm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <a href="/" class="flex items-center">
+            <img src="/images/logo.png" alt="Tap N Bite" class="h-12 sm:h-14">
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="/features" class="text-sm font-medium text-brand-600">Features</a>
+            <a href="/pricing" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">Pricing</a>
+            <a href="/about" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">About</a>
+            <a
+              href="/#contact"
+              class="inline-flex items-center px-5 py-2.5 rounded-full bg-brand-500 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition-all hover:shadow-xl hover:shadow-brand-500/40"
+            >
+              Get Started
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Hero -->
+      <section class="bg-gradient-to-br from-orange-50 via-white to-red-50 pt-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+              Built for Modern, Fast-Moving Restaurants
+            </h1>
+            <p class="text-xl text-slate-600 leading-relaxed">
+              Tap N Bite brings your entire ordering flow into one place: from QR code scan to completed order, with full control for restaurant owners.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Blocks -->
+      <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+          <!-- QR Ordering -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Core Feature
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                QR Code Ordering at Every Table
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Each table gets its own QR code. When a guest scans, we know exactly which table the order is coming from—no manual notes, no confusion, no shouting across the dining room.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Unique QR code for each table or pickup area</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Guest sees live, up-to-date menu & availability</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">No need to install any app – opens in browser</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Fewer mistakes and less back-and-forth with staff</span>
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/qr-dashboard.png" alt="QR Code Ordering" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Types -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/flexible-order.png" alt="Flexible Order Types" class="w-full h-auto" />
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Flexible Control
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Flexible Order Types You Can Switch On and Off
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Decide how you want to serve customers: dine-in, takeaway, delivery, or a combination. You are always in control of which order types are available.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Offer eat here, takeaway, and delivery from one screen</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Turn each option on or off in seconds</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Automatically show only the options you support</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Reduce confusion for guests and staff</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Live Order Management -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Real-Time Updates
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Live Order Management with Clear Statuses
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                As soon as a guest places an order, it appears in your admin panel with a clear status. Your team can focus on preparation instead of chasing tickets.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Notification bell for every new incoming order</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Simple status flow: pending → completed or cancelled</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Track open orders by table or order number</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Perfect for both front of house and kitchen teams</span>
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/liveOrder-dashboard.png" alt="Live Order Management" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Menu -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/menue-dahboard.png" alt="Menu Management" class="w-full h-auto" />
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Full Control
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Full Control of Your Digital Menu
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Your menu is always under your control. Update items, change prices, or turn dishes off when they're out of stock—all from the admin panel.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Add, edit, and remove items with just a few clicks</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Group dishes into categories like Starters, Mains, Desserts</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Highlight specials or bestsellers</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Instant updates across all guest devices</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Sales Analytics -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Analytics & Insights
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Sales Analytics That Make Sense
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Understand how your restaurant is performing with simple, visual reporting. No need to export spreadsheets or build your own dashboards.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Filter revenue by day, week, month, year, or all time</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Spot patterns such as busiest days and top-selling items</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Use charts to explain performance to partners</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Export or screenshot reports to share with your team</span>
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/revenue-dashborad.png" alt="Sales Analytics" class="w-full h-auto" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Staff Roles -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 relative">
+              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+                <img src="/images/staff-dashboard.png" alt="Staff Management" class="w-full h-auto" />
+              </div>
+            </div>
+            <div class="order-1 lg:order-2">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+                Team Management
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Staff Roles Designed for Busy Teams
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Give your team access to the tools they need, and nothing more. Protect sensitive information while keeping operations smooth.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Create staff accounts for order handling</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Staff can manage and update order statuses</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">They cannot change restaurant settings or menu design</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span class="text-slate-700">Revenue and analytics stay visible only to admins</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inventory Coming Soon -->
+      <section class="py-24 bg-gradient-to-br from-orange-50 to-red-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              Coming Soon
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+              Inventory That Connects to Your Sales
+            </h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+              We're working on a simple inventory module that connects each sale to the ingredients used, so you can stay on top of stock without complex software.
+            </p>
+          </div>
+          <div class="max-w-4xl mx-auto">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
+              <img src="/images/inventory-ui.png" alt="Inventory Module" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="bg-gradient-to-br from-brand-500 to-red-500 rounded-3xl p-12 text-center text-white shadow-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+              Start with Tap N Bite for Free Today
+            </h2>
+            <p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+              Set up your restaurant, add your menu, and go live with QR ordering in less time than it takes to finish a lunch rush.
+            </p>
+            <a
+              href="/pricing"
+              class="inline-flex items-center px-8 py-4 rounded-full bg-white text-brand-600 text-base font-semibold shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5"
+            >
+              View Pricing & Get Started
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img src="/images/logo.png" alt="Tap N Bite" class="h-12 mb-4 brightness-0 invert">
+            <p class="text-slate-400 text-sm">
+              Transform your restaurant with smart QR ordering. Free forever.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="/features" class="text-slate-400 hover:text-white transition-colors">Features</a></li>
+              <li><a href="/pricing" class="text-slate-400 hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="/about" class="text-slate-400 hover:text-white transition-colors">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-4">Contact</h3>
+            <ul class="space-y-2 text-slate-400 text-sm">
+              <li>shvzrn@gmail.com</li>
+              <li>+919149098757</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+          <p>© 2026 Tap N Bite. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, observerOptions);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const animateElements = document.querySelectorAll('section > div, .grid > div');
+        animateElements.forEach((el, index) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(20px)';
+          el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+          observer.observe(el);
+        });
+      });
+    </script>
+  </body>
+</html>
