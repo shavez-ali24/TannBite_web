@@ -45,3 +45,51 @@
   to = "/about.html"
   status = 200
   force = false
+
+# Netlify configuration
+
+[build]
+  publish = "."
+
+# Pretty URLs - removes .html extension
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/features.html"
+  to = "/features"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/pricing.html"
+  to = "/pricing"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/about.html"
+  to = "/about"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/features"
+  to = "/features.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+  force = false
