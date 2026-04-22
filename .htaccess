@@ -1,18 +1,20 @@
 # Remove .html extension from URLs
 RewriteEngine On
 
-# Redirect /page.html to /page
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
-RewriteRule ^ %1 [R=301,L]
+# Remove .html extension if present
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
 
-# Redirect /index or /index.html to /
-RewriteRule ^index(?:\.html)?$ / [R=301,L,NC]
-
-# Internally rewrite /page to /page.html
+# Add .html extension internally
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-RewriteRule ^(.+?)/?$ $1.html [L]
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Redirect index.html to root
+RewriteCond %{THE_REQUEST} /index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
 
 # Prevent directory listing
 Options -Indexes
