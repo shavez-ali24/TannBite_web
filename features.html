@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,17 +32,17 @@
               },
             },
             animation: {
-              'fade-in': 'fadeIn 0.6s ease-in-out',
-              'slide-up': 'slideUp 0.6s ease-out',
+              "fade-in": "fadeIn 0.6s ease-in-out",
+              "slide-up": "slideUp 0.6s ease-out",
             },
             keyframes: {
               fadeIn: {
-                '0%': { opacity: '0' },
-                '100%': { opacity: '1' },
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
               },
               slideUp: {
-                '0%': { transform: 'translateY(20px)', opacity: '0' },
-                '100%': { transform: 'translateY(0)', opacity: '1' },
+                "0%": { transform: "translateY(20px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
               },
             },
           },
@@ -52,16 +52,28 @@
   </head>
   <body class="bg-white text-slate-900 antialiased">
     <!-- Header -->
-    <header class="sticky top-0 z-40 border-b border-orange-100/70 bg-orange-50/95 backdrop-blur-md">
+    <header
+      class="sticky top-0 z-40 border-b border-orange-100/70 bg-orange-50/95 backdrop-blur-md"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-20">
           <a href="/" class="flex items-center">
-            <img src="images/logo.png" alt="Tap N Bite" class="h-12 sm:h-14">
+            <img src="images/logo.png" alt="Tap N Bite" class="h-12 sm:h-14" />
           </a>
           <nav class="hidden md:flex items-center gap-8" aria-label="Main">
-            <a href="/features" class="text-sm font-medium text-brand-600">Features</a>
-            <a href="/pricing" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">Pricing</a>
-            <a href="/about" class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors">About</a>
+            <a href="/features" class="text-sm font-medium text-brand-600"
+              >Features</a
+            >
+            <a
+              href="/pricing"
+              class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors"
+              >Pricing</a
+            >
+            <a
+              href="/about"
+              class="text-sm font-medium text-slate-700 hover:text-brand-600 transition-colors"
+              >About</a
+            >
             <a
               href="/#contact"
               class="inline-flex items-center px-5 py-2.5 rounded-full bg-brand-500 text-sm font-semibold text-white shadow-lg shadow-brand-500/30 hover:bg-brand-600 transition-all hover:shadow-xl hover:shadow-brand-500/40"
@@ -77,37 +89,94 @@
             aria-controls="mobile-nav"
           >
             <span class="sr-only">Toggle menu</span>
-            <svg id="nav-icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <svg
+              id="nav-icon-open"
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
             </svg>
-            <svg id="nav-icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            <svg
+              id="nav-icon-close"
+              class="hidden h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
             </svg>
           </button>
         </div>
       </div>
     </header>
-    <div id="mobile-nav" class="fixed inset-0 z-50 pointer-events-none md:hidden" aria-hidden="true">
-      <div id="mobile-nav-backdrop" class="absolute inset-0 bg-slate-900/45 opacity-0 transition-opacity duration-300 ease-out"></div>
-      <div id="mobile-nav-panel" class="absolute inset-0 -translate-x-full bg-gradient-to-br from-orange-50 via-white to-red-50 transition-transform duration-300 ease-out">
+    <div
+      id="mobile-nav"
+      class="fixed inset-0 z-50 pointer-events-none md:hidden"
+      aria-hidden="true"
+    >
+      <div
+        id="mobile-nav-backdrop"
+        class="absolute inset-0 bg-slate-900/45 opacity-0 transition-opacity duration-300 ease-out"
+      ></div>
+      <div
+        id="mobile-nav-panel"
+        class="absolute inset-0 -translate-x-full bg-gradient-to-br from-orange-50 via-white to-red-50 transition-transform duration-300 ease-out"
+      >
         <button
           type="button"
           id="mobile-nav-close"
           class="absolute right-5 top-5 inline-flex items-center justify-center rounded-xl border-2 border-brand-500/80 bg-orange-50/90 p-2.5 text-slate-700 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
           aria-label="Close menu"
         >
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
           </svg>
         </button>
         <div class="flex h-full flex-col px-6 pb-8 pt-6 sm:px-8">
           <a href="/" class="inline-flex items-center pr-16">
-            <img src="images/logo.png" alt="Tap N Bite" class="h-11">
+            <img src="images/logo.png" alt="Tap N Bite" class="h-11" />
           </a>
           <nav class="mt-8 flex flex-col gap-2" aria-label="Mobile">
-            <a href="/features" class="rounded-xl px-4 py-3 text-lg font-semibold text-brand-600 hover:bg-orange-100/60">Features</a>
-            <a href="/pricing" class="rounded-xl px-4 py-3 text-lg font-semibold text-slate-700 hover:bg-orange-100/60 hover:text-brand-600">Pricing</a>
-            <a href="/about" class="rounded-xl px-4 py-3 text-lg font-semibold text-slate-700 hover:bg-orange-100/60 hover:text-brand-600">About</a>
+            <a
+              href="/features"
+              class="rounded-xl px-4 py-3 text-lg font-semibold text-brand-600 hover:bg-orange-100/60"
+              >Features</a
+            >
+            <a
+              href="/pricing"
+              class="rounded-xl px-4 py-3 text-lg font-semibold text-slate-700 hover:bg-orange-100/60 hover:text-brand-600"
+              >Pricing</a
+            >
+            <a
+              href="/about"
+              class="rounded-xl px-4 py-3 text-lg font-semibold text-slate-700 hover:bg-orange-100/60 hover:text-brand-600"
+              >About</a
+            >
           </nav>
           <a
             href="/#contact"
@@ -120,59 +189,78 @@
     </div>
     <script>
       (function () {
-        var btn = document.getElementById('nav-toggle');
-        var menu = document.getElementById('mobile-nav');
-        var backdrop = document.getElementById('mobile-nav-backdrop');
-        var panel = document.getElementById('mobile-nav-panel');
-        var closeBtn = document.getElementById('mobile-nav-close');
-        var openIcon = document.getElementById('nav-icon-open');
-        var closeIcon = document.getElementById('nav-icon-close');
-        if (!btn || !menu || !backdrop || !panel || !closeBtn || !openIcon || !closeIcon) return;
+        var btn = document.getElementById("nav-toggle");
+        var menu = document.getElementById("mobile-nav");
+        var backdrop = document.getElementById("mobile-nav-backdrop");
+        var panel = document.getElementById("mobile-nav-panel");
+        var closeBtn = document.getElementById("mobile-nav-close");
+        var openIcon = document.getElementById("nav-icon-open");
+        var closeIcon = document.getElementById("nav-icon-close");
+        if (
+          !btn ||
+          !menu ||
+          !backdrop ||
+          !panel ||
+          !closeBtn ||
+          !openIcon ||
+          !closeIcon
+        )
+          return;
         function setOpen(open) {
-          menu.classList.toggle('pointer-events-none', !open);
-          menu.setAttribute('aria-hidden', String(!open));
-          backdrop.classList.toggle('opacity-0', !open);
-          backdrop.classList.toggle('opacity-100', open);
-          panel.classList.toggle('-translate-x-full', !open);
-          panel.classList.toggle('translate-x-0', open);
-          btn.setAttribute('aria-expanded', String(open));
-          openIcon.classList.toggle('hidden', open);
-          closeIcon.classList.toggle('hidden', !open);
-          document.body.classList.toggle('overflow-hidden', open);
+          menu.classList.toggle("pointer-events-none", !open);
+          menu.setAttribute("aria-hidden", String(!open));
+          backdrop.classList.toggle("opacity-0", !open);
+          backdrop.classList.toggle("opacity-100", open);
+          panel.classList.toggle("-translate-x-full", !open);
+          panel.classList.toggle("translate-x-0", open);
+          btn.setAttribute("aria-expanded", String(open));
+          openIcon.classList.toggle("hidden", open);
+          closeIcon.classList.toggle("hidden", !open);
+          document.body.classList.toggle("overflow-hidden", open);
         }
-        btn.addEventListener('click', function () {
-          setOpen(menu.classList.contains('pointer-events-none'));
+        btn.addEventListener("click", function () {
+          setOpen(menu.classList.contains("pointer-events-none"));
         });
-        closeBtn.addEventListener('click', function () {
+        closeBtn.addEventListener("click", function () {
           setOpen(false);
         });
-        backdrop.addEventListener('click', function () {
+        backdrop.addEventListener("click", function () {
           setOpen(false);
         });
-        menu.querySelectorAll('a').forEach(function (link) {
-          link.addEventListener('click', function () {
+        menu.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
             setOpen(false);
           });
         });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape' && !menu.classList.contains('pointer-events-none')) setOpen(false);
+        document.addEventListener("keydown", function (e) {
+          if (
+            e.key === "Escape" &&
+            !menu.classList.contains("pointer-events-none")
+          )
+            setOpen(false);
         });
-        window.addEventListener('resize', function () {
-          if (window.matchMedia('(min-width: 768px)').matches) setOpen(false);
+        window.addEventListener("resize", function () {
+          if (window.matchMedia("(min-width: 768px)").matches) setOpen(false);
         });
       })();
     </script>
 
     <main>
       <!-- Page Hero -->
-      <section class="bg-gradient-to-br from-orange-50 via-white to-red-50 pt-20 pb-16">
+      <section
+        class="bg-gradient-to-br from-orange-50 via-white to-red-50 pt-20 pb-16"
+      >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="max-w-3xl">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6"
+            >
               Built for Modern, Fast-Moving Restaurants
             </h1>
             <p class="text-xl text-slate-600 leading-relaxed">
-              Tap N Bite brings your entire ordering flow into one place: from QR code scan to completed order, with full control for restaurant owners.
+              Tap N Bite brings your entire ordering flow into one place: from
+              QR code scan to completed order, with full control for restaurant
+              owners.
             </p>
           </div>
         </div>
@@ -184,46 +272,106 @@
           <!-- QR Ordering -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Core Feature
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 QR Code Ordering at Every Table
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                Each table gets its own QR code. When a guest scans, we know exactly which table the order is coming from—no manual notes, no confusion, no shouting across the dining room.
+                Each table gets its own QR code. When a guest scans, we know
+                exactly which table the order is coming from—no manual notes, no
+                confusion, no shouting across the dining room.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Unique QR code for each table or pickup area</span>
+                  <span class="text-slate-700"
+                    >Unique QR code for each table or pickup area</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Guest sees live, up-to-date menu & availability</span>
+                  <span class="text-slate-700"
+                    >Guest sees live, up-to-date menu & availability</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">No need to install any app – opens in browser</span>
+                  <span class="text-slate-700"
+                    >No need to install any app – opens in browser</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Fewer mistakes and less back-and-forth with staff</span>
+                  <span class="text-slate-700"
+                    >Fewer mistakes and less back-and-forth with staff</span
+                  >
                 </li>
               </ul>
             </div>
             <div class="relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/qr-dashboard.png" alt="QR Code Ordering" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/qr-dashboard.png"
+                  alt="QR Code Ordering"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
           </div>
@@ -231,45 +379,106 @@
           <!-- Order Types -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/flexible-order.png" alt="Flexible Order Types" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/flexible-order.png"
+                  alt="Flexible Order Types"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
             <div class="order-1 lg:order-2">
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Flexible Control
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 Flexible Order Types You Can Switch On and Off
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                Decide how you want to serve customers: dine-in, takeaway, delivery, or a combination. You are always in control of which order types are available.
+                Decide how you want to serve customers: dine-in, takeaway,
+                delivery, or a combination. You are always in control of which
+                order types are available.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Offer eat here, takeaway, and delivery from one screen</span>
+                  <span class="text-slate-700"
+                    >Offer eat here, takeaway, and delivery from one
+                    screen</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Turn each option on or off in seconds</span>
+                  <span class="text-slate-700"
+                    >Turn each option on or off in seconds</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Automatically show only the options you support</span>
+                  <span class="text-slate-700"
+                    >Automatically show only the options you support</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Reduce confusion for guests and staff</span>
+                  <span class="text-slate-700"
+                    >Reduce confusion for guests and staff</span
+                  >
                 </li>
               </ul>
             </div>
@@ -278,46 +487,106 @@
           <!-- Live Order Management -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Real-Time Updates
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 Live Order Management with Clear Statuses
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                As soon as a guest places an order, it appears in your admin panel with a clear status. Your team can focus on preparation instead of chasing tickets.
+                As soon as a guest places an order, it appears in your admin
+                panel with a clear status. Your team can focus on preparation
+                instead of chasing tickets.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Notification bell for every new incoming order</span>
+                  <span class="text-slate-700"
+                    >Notification bell for every new incoming order</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Simple status flow: pending → completed or cancelled</span>
+                  <span class="text-slate-700"
+                    >Simple status flow: pending → completed or cancelled</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Track open orders by table or order number</span>
+                  <span class="text-slate-700"
+                    >Track open orders by table or order number</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Perfect for both front of house and kitchen teams</span>
+                  <span class="text-slate-700"
+                    >Perfect for both front of house and kitchen teams</span
+                  >
                 </li>
               </ul>
             </div>
             <div class="relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/liveOrder-dashboard.png" alt="Live Order Management" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/liveOrder-dashboard.png"
+                  alt="Live Order Management"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
           </div>
@@ -325,45 +594,106 @@
           <!-- Digital Menu -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/menue-dahboard.png" alt="Menu Management" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/menue-dahboard.png"
+                  alt="Menu Management"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
             <div class="order-1 lg:order-2">
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Full Control
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 Full Control of Your Digital Menu
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                Your menu is always under your control. Update items, change prices, or turn dishes off when they're out of stock—all from the admin panel.
+                Your menu is always under your control. Update items, change
+                prices, or turn dishes off when they're out of stock—all from
+                the admin panel.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Add, edit, and remove items with just a few clicks</span>
+                  <span class="text-slate-700"
+                    >Add, edit, and remove items with just a few clicks</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Group dishes into categories like Starters, Mains, Desserts</span>
+                  <span class="text-slate-700"
+                    >Group dishes into categories like Starters, Mains,
+                    Desserts</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Highlight specials or bestsellers</span>
+                  <span class="text-slate-700"
+                    >Highlight specials or bestsellers</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Instant updates across all guest devices</span>
+                  <span class="text-slate-700"
+                    >Instant updates across all guest devices</span
+                  >
                 </li>
               </ul>
             </div>
@@ -372,46 +702,107 @@
           <!-- Sales Analytics -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Analytics & Insights
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 Sales Analytics That Make Sense
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                Understand how your restaurant is performing with simple, visual reporting. No need to export spreadsheets or build your own dashboards.
+                Understand how your restaurant is performing with simple, visual
+                reporting. No need to export spreadsheets or build your own
+                dashboards.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Filter revenue by day, week, month, year, or all time</span>
+                  <span class="text-slate-700"
+                    >Filter revenue by day, week, month, year, or all time</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Spot patterns such as busiest days and top-selling items</span>
+                  <span class="text-slate-700"
+                    >Spot patterns such as busiest days and top-selling
+                    items</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Use charts to explain performance to partners</span>
+                  <span class="text-slate-700"
+                    >Use charts to explain performance to partners</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Export or screenshot reports to share with your team</span>
+                  <span class="text-slate-700"
+                    >Export or screenshot reports to share with your team</span
+                  >
                 </li>
               </ul>
             </div>
             <div class="relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/revenue-dashborad.png" alt="Sales Analytics" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/revenue-dashborad.png"
+                  alt="Sales Analytics"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
           </div>
@@ -419,45 +810,213 @@
           <!-- Staff Roles -->
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="order-2 lg:order-1 relative">
-              <div class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"></div>
-              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                <img src="images/staff-dashboard.png" alt="Staff Management" class="w-full h-auto" />
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/staff-dashboard.png"
+                  alt="Staff Management"
+                  class="w-full h-auto"
+                />
               </div>
             </div>
             <div class="order-1 lg:order-2">
-              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
                 Team Management
               </div>
               <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
                 Staff Roles Designed for Busy Teams
               </h2>
               <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                Give your team access to the tools they need, and nothing more. Protect sensitive information while keeping operations smooth.
+                Give your team access to the tools they need, and nothing more.
+                Protect sensitive information while keeping operations smooth.
               </p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Create staff accounts for order handling</span>
+                  <span class="text-slate-700"
+                    >Create staff accounts for order handling</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Staff can manage and update order statuses</span>
+                  <span class="text-slate-700"
+                    >Staff can manage and update order statuses</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">They cannot change restaurant settings or menu design</span>
+                  <span class="text-slate-700"
+                    >They cannot change restaurant settings or menu design</span
+                  >
                 </li>
                 <li class="flex items-start gap-3">
-                  <svg class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
                   </svg>
-                  <span class="text-slate-700">Revenue and analytics stay visible only to admins</span>
+                  <span class="text-slate-700"
+                    >Revenue and analytics stay visible only to admins</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kitchen Display System (KDS) -->
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-2 relative">
+              <div
+                class="absolute -inset-4 bg-gradient-to-r from-brand-400 to-red-500 rounded-3xl blur-2xl opacity-20"
+              ></div>
+              <div
+                class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+              >
+                <img
+                  src="images/kds.png"
+                  alt="Kitchen Display System"
+                  class="w-full h-auto"
+                />
+              </div>
+            </div>
+            <div class="order-1 lg:order-1">
+              <div
+                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+              >
+                Kitchen Display
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                Kitchen Display System for Faster Prep
+              </h2>
+              <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                Send orders straight to the kitchen on a dedicated screen. Your
+                back-of-house team sees what to cook, in what order, and when
+                items are ready—without paper tickets or missed chits.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-700"
+                    >Large, readable tickets optimized for busy kitchens</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-700"
+                    >Clear item breakdowns, modifiers, and special
+                    requests</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-700"
+                    >Status updates so front-of-house knows when food is
+                    ready</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="w-6 h-6 text-brand-500 mt-0.5 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    ></path>
+                  </svg>
+                  <span class="text-slate-700"
+                    >Works alongside your existing QR and admin order flow</span
+                  >
                 </li>
               </ul>
             </div>
@@ -469,19 +1028,29 @@
       <section class="py-24 bg-gradient-to-br from-orange-50 to-red-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="text-center mb-12">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6"
+            >
               Coming Soon
             </div>
             <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
               Inventory That Connects to Your Sales
             </h2>
             <p class="text-lg text-slate-600 max-w-2xl mx-auto">
-              We're working on a simple inventory module that connects each sale to the ingredients used, so you can stay on top of stock without complex software.
+              We're working on a simple inventory module that connects each sale
+              to the ingredients used, so you can stay on top of stock without
+              complex software.
             </p>
           </div>
           <div class="max-w-4xl mx-auto">
-            <div class="rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-              <img src="images/inventory-ui.png" alt="Inventory Module" class="w-full h-auto" />
+            <div
+              class="rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
+            >
+              <img
+                src="images/inventory-ui.png"
+                alt="Inventory Module"
+                class="w-full h-auto"
+              />
             </div>
           </div>
         </div>
@@ -490,12 +1059,15 @@
       <!-- CTA -->
       <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="bg-gradient-to-br from-brand-500 to-red-500 rounded-3xl p-12 text-center text-white shadow-2xl">
+          <div
+            class="bg-gradient-to-br from-brand-500 to-red-500 rounded-3xl p-12 text-center text-white shadow-2xl"
+          >
             <h2 class="text-3xl sm:text-4xl font-bold mb-4">
               Start with Tap N Bite for Free Today
             </h2>
             <p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-              Set up your restaurant, add your menu, and go live with QR ordering in less time than it takes to finish a lunch rush.
+              Set up your restaurant, add your menu, and go live with QR
+              ordering in less time than it takes to finish a lunch rush.
             </p>
             <a
               href="/pricing"
@@ -513,12 +1085,20 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <img src="images/logo.png" alt="Tap N Bite" class="h-12 mb-4 brightness-0 invert">
+            <img
+              src="images/logo.png"
+              alt="Tap N Bite"
+              class="h-12 mb-4 brightness-0 invert"
+            />
             <p class="text-slate-400 text-sm">
               Transform your restaurant with smart QR ordering. Free forever.
             </p>
             <div class="mt-6">
-              <p class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3">Follow us</p>
+              <p
+                class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-3"
+              >
+                Follow us
+              </p>
               <div class="flex flex-wrap items-center gap-2">
                 <a
                   href="https://www.instagram.com/tapn_bite?igsh=YXB5aXl6bHEyZnEw&utm_source=qr"
@@ -527,65 +1107,44 @@
                   class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800 text-slate-300 transition-colors hover:bg-brand-600 hover:text-white"
                   aria-label="Tap N Bite on Instagram"
                 >
-                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg
+                    class="h-5 w-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
                     <path
                       d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
                     />
                   </svg>
                 </a>
-                <span
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800/40 text-slate-600"
-                  title="Facebook — add link later"
-                  aria-hidden="true"
-                >
-                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800/40 text-slate-600"
-                  title="X (Twitter) — add link later"
-                  aria-hidden="true"
-                >
-                  <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800/40 text-slate-600"
-                  title="LinkedIn — add link later"
-                  aria-hidden="true"
-                >
-                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                    />
-                  </svg>
-                </span>
-                <span
-                  class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-800/40 text-slate-600"
-                  title="YouTube — add link later"
-                  aria-hidden="true"
-                >
-                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                    />
-                  </svg>
-                </span>
               </div>
             </div>
           </div>
           <div>
             <h3 class="font-semibold mb-4">Quick Links</h3>
             <ul class="space-y-2">
-              <li><a href="/features" class="text-slate-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="/pricing" class="text-slate-400 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="/about" class="text-slate-400 hover:text-white transition-colors">About</a></li>
+              <li>
+                <a
+                  href="/features"
+                  class="text-slate-400 hover:text-white transition-colors"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pricing"
+                  class="text-slate-400 hover:text-white transition-colors"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  class="text-slate-400 hover:text-white transition-colors"
+                  >About</a
+                >
+              </li>
             </ul>
           </div>
           <div>
@@ -596,7 +1155,9 @@
             </ul>
           </div>
         </div>
-        <div class="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
+        <div
+          class="border-t border-slate-800 pt-8 text-center text-sm text-slate-400"
+        >
           <p>© 2026 Tap N Bite. All rights reserved.</p>
         </div>
       </div>
@@ -605,25 +1166,29 @@
     <script>
       // Scroll animations
       const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.02,
+        rootMargin: "0px 0px 12% 0px",
       };
 
       const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+            observer.unobserve(entry.target);
           }
         });
       }, observerOptions);
 
-      document.addEventListener('DOMContentLoaded', () => {
-        const animateElements = document.querySelectorAll('section > div, .grid > div');
+      document.addEventListener("DOMContentLoaded", () => {
+        const animateElements = document.querySelectorAll(
+          "section > div, .grid > div",
+        );
         animateElements.forEach((el, index) => {
-          el.style.opacity = '0';
-          el.style.transform = 'translateY(20px)';
-          el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
+          el.style.opacity = "0";
+          el.style.transform = "translateY(12px)";
+          const delay = Math.min(index * 0.035, 0.18);
+          el.style.transition = `opacity 0.35s ease-out ${delay}s, transform 0.35s ease-out ${delay}s`;
           observer.observe(el);
         });
       });
